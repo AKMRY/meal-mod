@@ -18,12 +18,12 @@ public class CreativeModeTabRegister {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ModReference.MOD_ID);
 
     /**
-     * 例タブ
+     * 料理タブ
      */
-    public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
+    public static final RegistryObject<CreativeModeTab> MEAL_TAB = CREATIVE_MODE_TABS.register("meal_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> ItemRegister.EXAMPLE_ITEM.get().getDefaultInstance())
+            .icon(() -> ItemRegister.MEAL_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(ItemRegister.EXAMPLE_ITEM.get());
+                output.accept(ItemRegister.MEAL_ITEM.get());
             }).build());
 }

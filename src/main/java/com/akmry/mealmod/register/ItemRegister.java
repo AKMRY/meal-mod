@@ -19,18 +19,18 @@ public class ItemRegister {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ModReference.MOD_ID);
 
     /**
-     * 例ブロックアイテム
+     * 料理ブロックアイテム
      */
-    public static final RegistryObject<Item> EXAMPLE_BLOCK_ITEM = ITEMS.register("example_block",
-        () -> new BlockItem(BlockRegister.EXAMPLE_BLOCK.get(), new Item.Properties().setId(ITEMS.key("example_block")))
+    public static final RegistryObject<Item> MEAL_BLOCK_ITEM = ITEMS.register("meal_block",
+        () -> new BlockItem(BlockRegister.MEAL_BLOCK.get(), new Item.Properties().setId(ITEMS.key("meal_block")))
     );
 
     /**
-     * 例アイテム
+     * 料理アイテム
      */
-    public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item",
+    public static final RegistryObject<Item> MEAL_ITEM = ITEMS.register("meal_item",
         () -> new Item(new Item.Properties()
-            .setId(ITEMS.key("example_item"))
+            .setId(ITEMS.key("meal_item"))
             .food(new FoodProperties.Builder()
                 .alwaysEdible()
                 .nutrition(1)

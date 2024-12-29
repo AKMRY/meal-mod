@@ -35,6 +35,6 @@ public class ClientModEventHandler {
     @SubscribeEvent
     private void onBuildCreativeTabContents(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
-            event.accept(ItemRegister.EXAMPLE_BLOCK_ITEM);
+            event.accept(ItemRegister.MEAL_BLOCK_ITEM);
     }
 }

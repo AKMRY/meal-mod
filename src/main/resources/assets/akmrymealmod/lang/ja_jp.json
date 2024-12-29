@@ -1,5 +1,5 @@
 {
-    "block.akmrymealmod.example_block": "例ブロック",
-    "itemGroup.akmrymealmod.example_tab": "例タブ",
-    "item.akmrymealmod.example_item": "例アイテム"
+    "block.akmrymealmod.meal_block": "料理ブロック",
+    "itemGroup.akmrymealmod.meal_tab": "料理タブ",
+    "item.akmrymealmod.meal_item": "料理アイテム"
 }

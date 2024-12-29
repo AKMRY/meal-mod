@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "akmrymealmod:item/meal_item"
+    }
+}

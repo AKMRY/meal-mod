@@ -19,11 +19,11 @@ public class BlockRegister {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ModReference.MOD_ID);
 
     /**
-     * 例ブロック
+     * 料理ブロック
      */
-    public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("example_block",
+    public static final RegistryObject<Block> MEAL_BLOCK = BLOCKS.register("meal_block",
         () -> new Block(BlockBehaviour.Properties.of()
-            .setId(BLOCKS.key("example_block"))
+            .setId(BLOCKS.key("meal_block"))
             .mapColor(MapColor.STONE)
         )
     );
