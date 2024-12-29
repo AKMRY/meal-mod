@@ -21,7 +21,7 @@ public class ModEventHandler {
      * @param event コンフィグイベント
      */
     @SubscribeEvent
-    static void onModConfig(final ModConfigEvent event) {
+    public static void onModConfig(final ModConfigEvent event) {
         CommonConfig.load(event);
     }
 
@@ -31,7 +31,7 @@ public class ModEventHandler {
      * @param event 共通セットアップイベント
      */
     @SubscribeEvent
-    private void onCommonSetup(final FMLCommonSetupEvent event) {
+    public void onCommonSetup(final FMLCommonSetupEvent event) {
         ModReference.LOGGER.info("HELLO FROM COMMON SETUP");
 
         if (CommonConfig.getLogDirtBlock())
