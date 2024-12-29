@@ -33,7 +33,7 @@ public class ClientModEventHandler {
      * @param event クリエイティブタブのコンテンツ構築イベント
      */
     @SubscribeEvent
-    private void onBuildCreativeTabContents(BuildCreativeModeTabContentsEvent event) {
+    public void onBuildCreativeTabContents(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
             event.accept(ItemRegister.MEAL_BLOCK_ITEM);
     }
