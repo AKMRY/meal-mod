@@ -1,10 +1,11 @@
-package com.akmry.mealmod.register;
+package com.akmry.akmrymealmod.register;
 
-import com.akmry.mealmod.reference.ModReference;
+import com.akmry.akmrymealmod.reference.ModReference;
 
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -21,8 +22,9 @@ public class ItemRegister {
     /**
      * 料理ブロックアイテム
      */
-    public static final RegistryObject<Item> MEAL_BLOCK_ITEM = ITEMS.register("meal_block",
-        () -> new BlockItem(BlockRegister.MEAL_BLOCK.get(), new Item.Properties().setId(ITEMS.key("meal_block")))
+    public static final RegistryObject<Item> MEAL_BLOCK_ITEM = ITEMS.register("meal_block_item",
+        () -> new BlockItem(BlockRegister.MEAL_BLOCK.get(), new Item.Properties()
+            .setId(ITEMS.key("meal_block_item")))
     );
 
     /**
@@ -31,6 +33,9 @@ public class ItemRegister {
     public static final RegistryObject<Item> MEAL_ITEM = ITEMS.register("meal_item",
         () -> new Item(new Item.Properties()
             .setId(ITEMS.key("meal_item"))
+            .rarity(Rarity.EPIC)
+            .fireResistant()
+            .stacksTo(16)
             .food(new FoodProperties.Builder()
                 .alwaysEdible()
                 .nutrition(1)

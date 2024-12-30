@@ -1,6 +1,6 @@
-package com.akmry.mealmod.register;
+package com.akmry.akmrymealmod.register;
 
-import com.akmry.mealmod.reference.ModReference;
+import com.akmry.akmrymealmod.reference.ModReference;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;

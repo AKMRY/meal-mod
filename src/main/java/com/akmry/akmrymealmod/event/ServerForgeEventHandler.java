@@ -1,6 +1,6 @@
-package com.akmry.mealmod.event;
+package com.akmry.akmrymealmod.event;
 
-import com.akmry.mealmod.reference.ModReference;
+import com.akmry.akmrymealmod.reference.ModReference;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -18,7 +18,7 @@ public class ServerForgeEventHandler {
      * @param event サーバー起動イベント
      */
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
+    public static void onServerStarting(ServerStartingEvent event) {
         ModReference.LOGGER.info("HELLO from server starting");
     }
 }

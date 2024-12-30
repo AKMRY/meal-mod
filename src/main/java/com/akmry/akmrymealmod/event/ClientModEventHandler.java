@@ -1,7 +1,7 @@
-package com.akmry.mealmod.event;
+package com.akmry.akmrymealmod.event;
 
-import com.akmry.mealmod.reference.ModReference;
-import com.akmry.mealmod.register.ItemRegister;
+import com.akmry.akmrymealmod.reference.ModReference;
+import com.akmry.akmrymealmod.register.ItemRegister;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -22,7 +22,7 @@ public class ClientModEventHandler {
      * @param event クライアント開始イベント
      */
     @SubscribeEvent
-    public void onClientSetup(FMLClientSetupEvent event) {
+    public static void onClientSetup(FMLClientSetupEvent event) {
         ModReference.LOGGER.info("HELLO FROM CLIENT SETUP");
         ModReference.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
     }
@@ -33,7 +33,7 @@ public class ClientModEventHandler {
      * @param event クリエイティブタブのコンテンツ構築イベント
      */
     @SubscribeEvent
-    public void onBuildCreativeTabContents(BuildCreativeModeTabContentsEvent event) {
+    public static void onBuildCreativeTabContents(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
             event.accept(ItemRegister.MEAL_BLOCK_ITEM);
     }

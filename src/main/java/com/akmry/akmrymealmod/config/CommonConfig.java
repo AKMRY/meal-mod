@@ -1,4 +1,4 @@
-package com.akmry.mealmod.config;
+package com.akmry.akmrymealmod.config;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

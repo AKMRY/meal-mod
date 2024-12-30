@@ -1,10 +1,11 @@
-package com.akmry.mealmod;
+package com.akmry.akmrymealmod;
 
-import com.akmry.mealmod.config.CommonConfig;
-import com.akmry.mealmod.reference.ModReference;
-import com.akmry.mealmod.register.BlockRegister;
-import com.akmry.mealmod.register.CreativeModeTabRegister;
-import com.akmry.mealmod.register.ItemRegister;
+import com.akmry.akmrymealmod.config.CommonConfig;
+import com.akmry.akmrymealmod.reference.ModReference;
+import com.akmry.akmrymealmod.register.BlockRegister;
+import com.akmry.akmrymealmod.register.CreativeModeTabRegister;
+import com.akmry.akmrymealmod.register.ItemRegister;
+
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;

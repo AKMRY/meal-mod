@@ -1,7 +1,7 @@
-package com.akmry.mealmod.event;
+package com.akmry.akmrymealmod.event;
 
-import com.akmry.mealmod.config.CommonConfig;
-import com.akmry.mealmod.reference.ModReference;
+import com.akmry.akmrymealmod.config.CommonConfig;
+import com.akmry.akmrymealmod.reference.ModReference;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,7 +31,7 @@ public class ModEventHandler {
      * @param event 共通セットアップイベント
      */
     @SubscribeEvent
-    public void onCommonSetup(final FMLCommonSetupEvent event) {
+    public static void onCommonSetup(final FMLCommonSetupEvent event) {
         ModReference.LOGGER.info("HELLO FROM COMMON SETUP");
 
         if (CommonConfig.getLogDirtBlock())

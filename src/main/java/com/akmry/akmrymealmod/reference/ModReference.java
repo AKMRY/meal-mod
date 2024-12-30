@@ -1,4 +1,4 @@
-package com.akmry.mealmod.reference;
+package com.akmry.akmrymealmod.reference;
 
 import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;
