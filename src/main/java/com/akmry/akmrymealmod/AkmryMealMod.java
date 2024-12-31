@@ -7,6 +7,7 @@ import com.akmry.akmrymealmod.register.CreativeModeTabRegister;
 import com.akmry.akmrymealmod.register.ItemRegister;
 
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -21,13 +22,13 @@ public class AkmryMealMod {
      *
      * @param context モッドローディングコンテキスト
      */
-    public AkmryMealMod(FMLJavaModLoadingContext context) {
-        IEventBus modEventBus = context.getModEventBus();
+    public AkmryMealMod() {
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         BlockRegister.BLOCKS.register(modEventBus);
         ItemRegister.ITEMS.register(modEventBus);
         CreativeModeTabRegister.CREATIVE_MODE_TABS.register(modEventBus);
 
-        context.registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC);
     }
 }

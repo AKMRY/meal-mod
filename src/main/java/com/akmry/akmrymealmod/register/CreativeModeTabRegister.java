@@ -19,7 +19,7 @@ public class CreativeModeTabRegister {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ModReference.MOD_ID);
 
     /**
-     * 料理タブ
+     * 食事タブ
      */
     public static final RegistryObject<CreativeModeTab> MEAL_TAB = CREATIVE_MODE_TABS.register("meal_tab",
         () -> CreativeModeTab.builder()
@@ -27,7 +27,6 @@ public class CreativeModeTabRegister {
             .icon(() -> ItemRegister.MEAL_ITEM.get().getDefaultInstance())
             .title(Component.translatable("itemGroup.akmrymealmod.meal_tab"))
             .displayItems((parameters, output) -> {
-                output.accept(ItemRegister.MEAL_BLOCK_ITEM.get());
                 output.accept(ItemRegister.MEAL_ITEM.get());
             }).build());
 }

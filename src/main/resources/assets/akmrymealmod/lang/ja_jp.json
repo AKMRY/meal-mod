@@ -1,5 +1,5 @@
 {
-    "itemGroup.akmrymealmod.meal_tab": "料理タブ",
-    "item.akmrymealmod.meal_block_item": "料理ブロック",
-    "item.akmrymealmod.meal_item": "料理アイテム"
+    "block.akmrymealmod.meal_block": "食事ブロック",
+    "itemGroup.akmrymealmod.meal_tab": "食事タブ",
+    "item.akmrymealmod.meal_item": "食事アイテム"
 }

@@ -4,4 +4,7 @@
 			"path": "."
 		}
 	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic"
+	},
 }
